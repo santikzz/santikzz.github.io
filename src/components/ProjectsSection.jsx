@@ -39,10 +39,10 @@ export const ProjectsSection = () => {
       badges: ['React', 'Next.js', 'Tailwindcss', 'Framer Motion', 'Parallax']
     },
     {
-      title: 'KEY CORE',
-      description: 'Key Core is a fullstack SAAS application designed for users to create and manage applications and their licenses and keys. With multi user support, resellers and permission based access, Google oauth and a powerful admin panel, Key Core is a complete solution for software licensing.',
-      url: 'https://darkslategray-penguin-805073.hostingersite.com/',
-      thumbnail: '/static/keycore.jpg',
+      title: 'EPSILON',
+      description: 'Manga reader site. I worked on both the frontend and backend of a modern, secure, and scalable web app featuring advanced end-to-end encryption, efficient large file uploads, and high-performance optimization to handle heavy user concurrency while ensuring complete data protection.',
+      url: 'http://beta.epsilonscan.to/?content-warning',
+      thumbnail: '/static/EPSILON.png',
       badges: ['React', 'Vite', 'Tailwindcss', 'Laravel', 'MySQL', 'Inertia 2.0']
     },
     {
@@ -53,19 +53,26 @@ export const ProjectsSection = () => {
       badges: ['React', 'Next.js', 'Tailwindcss', 'Parallax', 'Framer Motion']
     },
     {
-      title: 'SQUAD',
-      description: 'Squad is a web app designed to help students create and find study groups. This personal project focused on improving student collaboration by offering a platform for group creation, chat, and resource sharing.',
-      url: 'https://squad.net.ar',
-      thumbnail: '/static/squad_banner.jpg',
-      badges: ['React', 'Vite', 'Tailwindcss', 'Socket.io', 'Express', 'MongoDB']
+      title: 'JOBU',
+      description: 'Jobu is an web ai solution for HR departments that streamlines the recruitment process by leveraging artificial intelligence to match candidates with job openings more efficiently. I help integrate backend with AI.',
+      url: 'https://getjobu.com/',
+      thumbnail: '/static/JOBU.png',
+      badges: ['React', 'Vite', 'Tailwindcss', 'Laravel', 'Python', 'OpenAI API']
     },
     {
-      title: 'ECOBITE',
+      title: 'EPIC BARILOCHE',
       description: 'Ecobite is a React Native app designed for restaurants to sell their leftover food at a reduced price instead of discarding it. The app aims to minimize food waste while offering customers affordable meal options.',
+      url: 'https://epicbariloche.com/',
+      thumbnail: '/static/EPIC-BARILOCHE.png',
+      badges: ['React', 'Tailwindcss', 'Framer Motion', 'Parallax' ]
+    },
+    {
+      title: 'My Office Taxes',
+      description: 'Developed and optimized a web platform for digital signatures and document management, featuring secure e-signing, automated staff task pipelines, and seamless invoicing through full Stripe integration for efficient business operations.',
       url: '#',
-      thumbnail: '/static/ecobite_banner.jpg',
-      badges: ['React Native', 'Expo', 'Tailwindcss', 'Laravel', 'MySQL']
-    }
+      thumbnail: '/static/MY-OFFICE-TAXES.jpeg',
+      badges: ['React', 'Vite', 'Tailwindcss', 'Laravel', 'MySQL', 'Stripe API']
+    },
 
   ]
 

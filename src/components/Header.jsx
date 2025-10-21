@@ -13,12 +13,7 @@ export default function Header() {
             text: "Home"
         },
         {
-            href: "#about",
-            icon: <Info className="inline mb-1 mr-1 md:size-4 size-6" />,
-            text: "About"
-        },
-        {
-            href: "#services",
+            href: "#projects",
             icon: <LayoutGrid className="inline mb-1 mr-1 md:size-4 size-6" />,
             text: "Projects"
         },
@@ -64,9 +59,6 @@ export default function Header() {
                         <a href="mailto:santiago_bugnon@hotmail.com" target="_blank" className="hover:brightness-75 transition-all duration-150 ease-linear hidden md:flex text-white gap-1">
                             <Mail className='text-white size-6' strokeWidth={1.3} color="#fff" />
                             Email
-                        </a>
-                        <a href="/cv_santiago_bugnon.pdf" target="_blank" className="hover:brightness-75 transition-all duration-150 ease-linear hidden md:flex text-white gap-1">
-                            <FileText className='text-white size-6' /> Resume
                         </a>
 
                     </div>

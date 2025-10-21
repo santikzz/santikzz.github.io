@@ -7,6 +7,10 @@ export const ExperienceStudiesSection = () => {
             <div className="flex flex-row items-end gap-4">
                 <h2 className="text-orange-500 text-2xl md:text-6xl font-grotesque-display glow">EXPERIENCE & STUDIES</h2>
             </div>
+            <div className="flex flex-col">
+                <label className="underline text-white text-xl flex flex-row items-center gap-2"><Calendar size={18} /> 2025 - Present</label>
+                <p className="text-xl text-neutral-300">Currently, I am engaged as a freelance web developer, collaborating with various clients to create dynamic and responsive web applications. My work involves utilizing modern technologies such as React, Next.js, and Laravel to deliver high-quality solutions that meet client requirements and enhance user experience.</p>
+            </div>
 
             <div className="flex flex-col">
                 <label className="underline text-white text-xl flex flex-row items-center gap-2"><Calendar size={18} /> 2024 - 2025</label>
