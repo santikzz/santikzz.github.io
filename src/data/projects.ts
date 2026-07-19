@@ -75,7 +75,7 @@ export const projects: Project[] = [
         description:
             "Marketing site with editorial typography and motion. Focused on conversion and clarity for a niche ski and snowboard tourism audience.",
         stack: ["Next.js", "Tailwind", "Framer Motion"],
-        image: "/assets/screenshots/epicbariloche.jpg",
+        image: "/assets/screenshots/epicbariloche_1.png",
         links: [{ label: "epicbariloche.com", href: "https://epicbariloche.com/" }],
     },
     {
@@ -87,7 +87,7 @@ export const projects: Project[] = [
         description:
             "Web product that streamlines recruiting with LLM-driven candidate matching, ranking and recruiter workflows. I worked on backend services and the integration with the AI layer.",
         stack: ["React", "Laravel", "Python", "OpenAI API", "MySQL"],
-        image: "/assets/screenshots/joub_1.jpg",
+        image: "/assets/screenshots/jobu_1.png",
         links: [{ label: "getjobu.com", href: "https://getjobu.com/" }],
     },
     {
