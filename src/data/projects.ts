@@ -67,20 +67,6 @@ export const projects: Project[] = [
         ],
     },
     {
-        slug: "andony",
-        title: "Andony",
-        year: "2025",
-        country: "es",
-        summary: "PWA for fitness: gym routines, workout and diet tracking.",
-        description:
-            "Progressive web app for fitness: gym routines, exercise logging and diet tracking with nutrition data from the Nutria API. Built with Laravel, React, Tailwind and PostgreSQL, installable on any device as a PWA.",
-        stack: ["Laravel", "React", "Tailwind", "PostgreSQL", "Nutria API"],
-        image: "/assets/screenshots/andony_1.jpg",
-        images: [
-            "/assets/screenshots/andony_2.jpg",
-        ],
-    },
-    {
         slug: "epic-bariloche",
         title: "Epic Bariloche",
         year: "2024",
@@ -89,7 +75,7 @@ export const projects: Project[] = [
         description:
             "Marketing site with editorial typography and motion. Focused on conversion and clarity for a niche ski and snowboard tourism audience.",
         stack: ["Next.js", "Tailwind", "Framer Motion"],
-        image: "https://santikzz.github.io/static/EPIC-BARILOCHE.png",
+        image: "/assets/screenshots/epicbariloche.jpg",
         links: [{ label: "epicbariloche.com", href: "https://epicbariloche.com/" }],
     },
     {
@@ -101,7 +87,7 @@ export const projects: Project[] = [
         description:
             "Web product that streamlines recruiting with LLM-driven candidate matching, ranking and recruiter workflows. I worked on backend services and the integration with the AI layer.",
         stack: ["React", "Laravel", "Python", "OpenAI API", "MySQL"],
-        image: "https://santikzz.github.io/static/JOBU.png",
+        image: "/assets/screenshots/joub_1.jpg",
         links: [{ label: "getjobu.com", href: "https://getjobu.com/" }],
     },
     {
@@ -113,7 +99,7 @@ export const projects: Project[] = [
         description:
             "Platform for digital signatures and document management. Real-time chat, automated staff workflows and Stripe & Square integration for invoicing and subscriptions.",
         stack: ["React", "Laravel", "MySQL", "Stripe", "Square"],
-        image: "https://santikzz.github.io/static/MY-OFFICE-TAXES.jpeg",
+        image: "/assets/screenshots/officetaxes_1.jpg",
     },
     {
         slug: "blucenter",
