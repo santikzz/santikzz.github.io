@@ -2,8 +2,9 @@ import { useRef, useState, type ReactNode } from "react";
 import { defineSounds, useSounds, type PlayOptions } from "sonus-js";
 import { Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
+import SliderRow from "./slider-row";
+import SoundBuilder from "./sound-builder";
 
 const customSounds = defineSounds({
     laser: {
@@ -118,6 +119,8 @@ export default function Sonus() {
                 </div>
             </section>
 
+            <SoundBuilder />
+
             <section className="rounded-xl border border-border p-5">
                 <h2 className="text-sm font-semibold text-foreground">Global</h2>
                 <div className="mt-4 grid gap-5 sm:grid-cols-2 sm:items-center">
@@ -136,34 +139,6 @@ export default function Sonus() {
                     </label>
                 </div>
             </section>
-        </div>
-    );
-}
-
-function SliderRow({
-    label,
-    display,
-    value,
-    min,
-    max,
-    step,
-    onChange,
-}: {
-    label: string;
-    display: string;
-    value: number;
-    min: number;
-    max: number;
-    step: number;
-    onChange: (value: number) => void;
-}) {
-    return (
-        <div className="space-y-2">
-            <div className="flex items-center justify-between text-xs">
-                <span className="text-muted-foreground">{label}</span>
-                <span className="font-medium tabular-nums text-foreground">{display}</span>
-            </div>
-            <Slider value={[value]} min={min} max={max} step={step} onValueChange={([v]) => onChange(v)} />
         </div>
     );
 }

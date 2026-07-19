@@ -8,12 +8,12 @@ export type Tool = {
 export const tools: Tool[] = [
     {
         slug: "schema-form",
-        name: "Schema Forms",
+        name: "Schema Form Sandbox",
         description: "Build and preview forms from a JSON schema.",
     },
     {
         slug: "sonus",
-        name: "Sonus",
+        name: "Sonus Playground",
         description: "Live audio playground.",
     },
 ];
