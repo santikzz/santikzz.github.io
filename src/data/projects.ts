@@ -26,7 +26,7 @@ export const projects: Project[] = [
     {
         slug: "epsilon",
         title: "Epsilon",
-        type: "personal",
+        type: "client",
         year: "2025",
         country: "fr",
         summary: "Anime and manga reader with 100k+ series and end-to-end encryption DRM.",
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     {
         slug: "anda",
         title: "Andá",
-        type: "client",
+        type: "personal",
         year: "2026",
         country: "ar",
         summary: "Walk-to-earn app: walk around Tandil, earn points, redeem real prizes.",
