@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { projects, type ProjectType } from "@/data/projects";
 import CountryFlag from "@/components/projects/country-flag";
 import ProjectFilters from "@/components/projects/project-filters";
+import ProjectTypeBadge from "@/components/projects/project-type-badge";
 import SectionLabel from "@/components/index/section-label";
 
 const projectTypes: ProjectType[] = ["personal", "client"];
@@ -82,6 +83,7 @@ export default function ProjectsPage() {
                                         {p.title}
                                     </h3>
                                     <span className="flex items-center gap-2 shrink-0 text-xs text-muted-foreground tabular-nums pt-px">
+                                        <ProjectTypeBadge type={p.type} />
                                         {p.year}
                                         <CountryFlag code={p.country} />
                                     </span>

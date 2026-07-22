@@ -136,4 +136,31 @@ export const projects: Project[] = [
         image: "https://nebulasolutions.com.ar/assets/lawfirm.jpg",
         links: [{ label: "nebulasolutions.com.ar", href: "https://nebulasolutions.com.ar/en/projects/lawfirm" }],
     },
+    {
+        slug: "modul8",
+        title: "Modul8",
+        type: "personal",
+        year: "2026",
+        country: "ar",
+        summary: "Open source guitar effects desktop app with Lua scripted pedals.",
+        description:
+            "Real-time guitar effects host for Windows. You load pedals onto a virtual board, wire the signal chain with cable routing and save presets, with adjustable buffer sizes to trade latency for stability. Every effect is a Lua script running on LuaJIT and hot-reloads without restarting the app, so writing your own pedal is just editing a file. Built in C++ with an ImGui interface and a documented scripting API.",
+        stack: ["C++", "Lua", "LuaJIT", "ImGui"],
+        image: "/assets/screenshots/modul8_1.jpg",
+        links: [{ label: "github.com/santikzz/modul8", href: "https://github.com/santikzz/modul8" }],
+    },
+    {
+        slug: "vaquita",
+        title: "Vaquita",
+        type: "personal",
+        year: "2026",
+        country: "ar",
+        summary: "Mobile-first PWA to split shared expenses with friends.",
+        description:
+            "Tricount-style PWA for splitting expenses in a group. Persistent groups with shareable invite links, quick groups for guests without an account, and events to scope expenses to the people who were actually there. Splits work equally, by exact amounts or by portions, and balances are settled with the minimum number of transfers, showing each person's MercadoPago alias to pay directly. Built with Laravel 12, React 19 and Inertia.",
+        stack: ["Laravel", "React", "Inertia", "TypeScript", "Tailwind", "shadcn/ui"],
+        image: "/assets/screenshots/vaquita_1.jpg",
+        images: ["/assets/screenshots/vaquita_2.jpg"],
+        links: [{ label: "github.com/santikzz/vaquita", href: "https://github.com/santikzz/vaquita" }],
+    },
 ];

@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { projects, type Project } from "@/data/projects";
 import CountryFlag from "@/components/projects/country-flag";
 import ProjectCarousel, { type CarouselItem } from "@/components/projects/project-carousel";
+import ProjectTypeBadge from "@/components/projects/project-type-badge";
 
 function youtubeEmbedUrl(url: string) {
     const match = url.match(/(?:youtu\.be\/|v=|\/embed\/|\/shorts\/)([\w-]{11})/);
@@ -51,6 +52,7 @@ export default function ProjectDetailPage({ project }: { project: Project }) {
                         {project.title}
                     </h1>
                     <span className="flex items-center gap-2 text-sm text-muted-foreground tabular-nums">
+                        <ProjectTypeBadge type={project.type} />
                         {project.year}
                         <CountryFlag code={project.country} className="h-3.5" />
                     </span>

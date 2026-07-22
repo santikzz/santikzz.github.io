@@ -1,6 +1,7 @@
 import { X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { ProjectType } from "@/data/projects";
+import { projectTypeLabels } from "./project-type-badge";
 
 type Props = {
     types: ProjectType[];
@@ -10,11 +11,6 @@ type Props = {
     onTypeChange: (type: ProjectType | null) => void;
     onTagToggle: (tag: string) => void;
     onClear: () => void;
-};
-
-const typeLabels: Record<ProjectType, string> = {
-    personal: "Personal",
-    client: "Client",
 };
 
 export default function ProjectFilters({
@@ -46,7 +42,7 @@ export default function ProjectFilters({
                                     : "border-border text-muted-foreground hover:text-foreground hover:border-foreground/30"
                             )}
                         >
-                            {typeLabels[t]}
+                            {projectTypeLabels[t]}
                         </button>
                     );
                 })}
