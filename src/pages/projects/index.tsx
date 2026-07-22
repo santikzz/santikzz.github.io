@@ -1,12 +1,42 @@
+import { useMemo, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
-import { projects } from "@/data/projects";
+import { projects, type ProjectType } from "@/data/projects";
 import CountryFlag from "@/components/projects/country-flag";
+import ProjectFilters from "@/components/projects/project-filters";
 import SectionLabel from "@/components/index/section-label";
 
+const projectTypes: ProjectType[] = ["personal", "client"];
+
 export default function ProjectsPage() {
+    const [activeType, setActiveType] = useState<ProjectType | null>(null);
+    const [activeTags, setActiveTags] = useState<string[]>([]);
+
+    const tags = useMemo(
+        () => [...new Set(projects.flatMap((p) => p.stack))].sort((a, b) => a.localeCompare(b)),
+        []
+    );
+
+    const filtered = useMemo(
+        () =>
+            projects.filter((p) => {
+                if (activeType && p.type !== activeType) return false;
+                if (activeTags.length && !activeTags.some((t) => p.stack.includes(t))) return false;
+                return true;
+            }),
+        [activeType, activeTags]
+    );
+
+    const toggleTag = (tag: string) =>
+        setActiveTags((prev) => (prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]));
+
+    const clearFilters = () => {
+        setActiveType(null);
+        setActiveTags([]);
+    };
+
     return (
         <>
             <Head>
@@ -17,8 +47,18 @@ export default function ProjectsPage() {
             <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-20">
                 <SectionLabel label="Projects" />
 
+                <ProjectFilters
+                    types={projectTypes}
+                    tags={tags}
+                    activeType={activeType}
+                    activeTags={activeTags}
+                    onTypeChange={setActiveType}
+                    onTagToggle={toggleTag}
+                    onClear={clearFilters}
+                />
+
                 <div className="divide-y divide-border">
-                    {projects.map((p) => (
+                    {filtered.map((p) => (
                         <Link
                             key={p.slug}
                             href={`/projects/${p.slug}`}
@@ -60,6 +100,10 @@ export default function ProjectsPage() {
                         </Link>
                     ))}
                 </div>
+
+                {filtered.length === 0 && (
+                    <p className="py-8 text-xs text-muted-foreground">No projects match these filters.</p>
+                )}
             </section>
         </>
     );

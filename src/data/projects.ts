@@ -3,9 +3,12 @@ export type ProjectLink = {
     href: string;
 };
 
+export type ProjectType = "personal" | "client";
+
 export type Project = {
     slug: string;
     title: string;
+    type: ProjectType;
     year: string;
     country: string;
     summary: string;
@@ -23,6 +26,7 @@ export const projects: Project[] = [
     {
         slug: "epsilon",
         title: "Epsilon",
+        type: "personal",
         year: "2025",
         country: "fr",
         summary: "Anime and manga reader with 100k+ series and end-to-end encryption DRM.",
@@ -40,6 +44,7 @@ export const projects: Project[] = [
     {
         slug: "anda",
         title: "Andá",
+        type: "client",
         year: "2026",
         country: "ar",
         summary: "Walk-to-earn app: walk around Tandil, earn points, redeem real prizes.",
@@ -52,6 +57,7 @@ export const projects: Project[] = [
     {
         slug: "nexo",
         title: "Nexo",
+        type: "personal",
         year: "2026",
         country: "ar",
         summary: "My own task manager with time tracking, tickets, invoicing and a secrets vault.",
@@ -69,6 +75,7 @@ export const projects: Project[] = [
     {
         slug: "epic-bariloche",
         title: "Epic Bariloche",
+        type: "client",
         year: "2024",
         country: "ar",
         summary: "High-performance landing for a Patagonian ski school.",
@@ -81,6 +88,7 @@ export const projects: Project[] = [
     {
         slug: "jobu",
         title: "Jobu",
+        type: "client",
         year: "2024",
         country: "co",
         summary: "AI-powered recruiting platform that matches candidates to roles.",
@@ -93,6 +101,7 @@ export const projects: Project[] = [
     {
         slug: "my-office-taxes",
         title: "My Office Taxes",
+        type: "client",
         year: "2024",
         country: "us",
         summary: "E-signature and document workflow with Stripe & Square billing.",
@@ -104,6 +113,7 @@ export const projects: Project[] = [
     {
         slug: "blucenter",
         title: "Blucenter",
+        type: "client",
         year: "2025",
         country: "ar",
         summary: "E-commerce with a fully editable admin panel.",
@@ -116,6 +126,7 @@ export const projects: Project[] = [
     {
         slug: "elite-law",
         title: "Elite Law",
+        type: "client",
         year: "2025",
         country: "fr",
         summary: "Multipage marketing site for a French law firm.",
